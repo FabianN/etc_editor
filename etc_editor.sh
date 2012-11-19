@@ -16,3 +16,7 @@ EDITOR=vim
 ##
 # Config End
 ##
+
+
+directory=${1%/*}
+file=${1##*/}
