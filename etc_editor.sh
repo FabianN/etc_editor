@@ -20,3 +20,6 @@ EDITOR=vim
 
 directory=${1%/*}
 file=${1##*/}
+
+mkdir /tmp/etc_keeper
+cp $1 /tmp/etc_keeper/$file
