@@ -35,7 +35,9 @@ until [[ $i==0 ]]; do
     diffname="$1.diff$[n+1]"
     echo "Test-filename of the diff is: $diffname"
     if [[ -e $difffile ]]; then
-
+        difffiles[$n]=$diffname # Build the array
+        echo "Test-added #$n"
+        n=$[$n+1]
     else
 
     fi
