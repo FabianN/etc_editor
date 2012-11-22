@@ -39,7 +39,9 @@ until [[ $i==0 ]]; do
         echo "Test-added #$n"
         n=$[$n+1]
     else
-
+        difffiles[$n]=$diffname # This will be the new diff file
+        echo "Test-End, added #$n"
+        i=0
     fi
 done
 
