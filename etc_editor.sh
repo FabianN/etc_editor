@@ -31,6 +31,10 @@ cp $1 /tmp/etc_keeper/$file
 $EDITOR $1
 
 
+until [[ $i==0 ]]; do
+
+done
+
 ##
 # Cleanup files
 ##
