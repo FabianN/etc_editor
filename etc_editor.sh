@@ -29,3 +29,9 @@ mkdir /tmp/etc_keeper
 cp $1 /tmp/etc_keeper/$file
 
 $EDITOR $1
+
+
+##
+# Cleanup files
+##
+rm -r /tmp/etc_keeper
