@@ -32,7 +32,8 @@ $EDITOR $1
 
 
 until [[ $i==0 ]]; do
-
+    diffname="$1.diff$[n+1]"
+    echo "Test-filename of the diff is: $diffname"
 done
 
 ##
