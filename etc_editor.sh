@@ -17,6 +17,10 @@ EDITOR=vim
 # Config End
 ##
 
+## Setup variables
+i=1
+n=0
+declare -a difffiles
 
 directory=${1%/*}
 file=${1##*/}
