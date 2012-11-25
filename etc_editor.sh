@@ -52,6 +52,8 @@ until [[ $i == 0 ]]; do
     fi
 done
 
+diff -u /tmp/etc_keeper/$file $1 > "${difffiles[-1]}"
+
 echo "Test-create a file at ${difffiles[-1]}" #Test Line
 
 ##
