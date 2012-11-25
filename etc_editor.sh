@@ -36,11 +36,10 @@ $EDITOR $1
 
 echo "Test-editor end"
 
-until [[ $i==0 ]]; do
-    diffname="$1.diff$[n+1]"
+until [[ $i == 0 ]]; do
+    diffname="${1}.diff$[n+1]"
     echo "Test-looking for: $diffname" #Test Line
-    echo "Test-filename of the diff is: $diffname"
-    if [[ -e $difffile ]]; then
+    if [ -e $diffname ]; then
         echo "Test-FOUND IT!" #Test Line
         difffiles[$n]=$diffname # Build the array
         echo "Test-added to array entry #$n." #Test Line
