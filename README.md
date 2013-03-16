@@ -4,6 +4,11 @@
 
 etc Editor is a simple command line wrapper for for your favorite editor to automatically create diff files of your edits. The diffs will named *__file.name__.diff#*, with the latest diff being the highest number at the end of the *.diff*.
 
+## Usage
+
+```bash
+$ etc_editor.sh ~/path/to/file.ext
+```
 
 ## Configs
 
